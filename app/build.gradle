@@ -24,11 +24,13 @@ dependencies {
 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-    // This dependency is used by the application.
+    implementation 'com.google.code.gson:gson:2.11.0'
+    
+    implementation 'com.mysql:mysql-connector-j:9.1.0'
+
     implementation libs.guava
 
     compileOnly 'jakarta.servlet:jakarta.servlet-api:6.1.0'
-
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
